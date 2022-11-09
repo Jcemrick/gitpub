@@ -3,10 +3,11 @@
 //-------------------------------------
 require('dotenv').config();
 const express = require('express');
+const drinks = require('./models/drinks');
 
 const app = express();
 
-const port = process.env.PORT
+const port = process.env.PORT;
 
 //-------------------------------------
 // Declare Middleware
@@ -24,6 +25,9 @@ app.get('/', (req, res) => {
   res.send("Welcome to the Gitpub App!")
 })
 
+app.get('/drinks', (req, res) => {
+  res.send(drinks)
+})
 
 
 
