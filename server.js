@@ -5,6 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const drinks = require('./models/drinks');
 
+
 const app = express();
 
 const port = process.env.PORT;
@@ -26,7 +27,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-  res.send(drinks)
+  res.render('drinks_index.ejs')
 })
 
 
