@@ -3,14 +3,7 @@
 
 ###### Checkpoints / Lab Progress
 - [x] Setting up file structure
--- *mkdir gitpub*
--- *cd gitpub*
--- *mkdir views*
--- *touch views/drinks_index.ejs views/drinks_show.ejs*
--- *mkdir models*
--- *touch models/drinks.js*
--- *touch server.js*
--- *npm init*
+
 - [x] Setting up your server
 - [x] Setting up your 'database'
 - [x] Setting up your index view
