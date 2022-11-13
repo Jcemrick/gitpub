@@ -15,17 +15,9 @@ const port = process.env.PORT;
 // Declare Middleware
 //-------------------------------------
 
+app.use('/', drinkRouter)
+
 app.use('/drinks', drinkRouter)
-
-
-
-
-//-------------------------------------
-// Declare Routes and Routers
-//-------------------------------------
-app.get('/', (req, res) => {
-  res.send("Welcome to the Gitpub App!")
-})
 
 
 
