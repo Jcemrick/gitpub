@@ -12,6 +12,15 @@
   </style>
 </head>
 <body>
-  <h1>Welcome To GitPub</h1>
+  <h1>List of Drinks</h1>
+    <ul>
+      <% drink.forEach((drink) => { %>
+        <% let drinkName = drink.name %>
+        <li> <%=  drinkName.charAt(0).toUpperCase() + drinkName.slice(1) %> </li>
+
+      <% }) %>
+    </ul>
 </body>
 </html>
+
+
