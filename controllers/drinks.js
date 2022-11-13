@@ -23,6 +23,11 @@ router.get('/', (req, res) => {
   })
 })
 
+router.get('/drinks/:id', (req, res) => {
+  res.send(`Drink info for ${req.params.id}`)
+})
+
+
 // ----------------------
 // export
 // ----------------------
