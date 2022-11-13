@@ -16,7 +16,7 @@
     <ul>
       <% drink.forEach((drink) => { %>
         <% let drinkName = drink.name %>
-        <li> <%=  drinkName.charAt(0).toUpperCase() + drinkName.slice(1) %> </li>
+        <li><a href="/drinks/<%= drinkName %>"> <%=  drinkName.charAt(0).toUpperCase() + drinkName.slice(1) %> </li>
 
       <% }) %>
     </ul>
