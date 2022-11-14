@@ -17,16 +17,21 @@ const router = express.Router();
 // ----------------------
 // Routes
 // ----------------------
-router.get('/', (req, res) => {
+router.get('/drinks', (req, res) => {
   res.render('drinks_index.ejs', {
-    drink: drinks.getAll()
+    drinks: drinks,
   })
 })
 
-router.get('/drinks/:id', (req, res) => {
-  res.send(`Drink info for ${req.params.id}`)
+router.get('/', (req, res) => {
+  res.send("Welcome to the Gitpub App!");
 })
 
+router.get('/:id', (req, res) => {
+  res.render('drinks_show.ejs', {
+    drinks: drinks,
+  })
+})
 
 // ----------------------
 // export
