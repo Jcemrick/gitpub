@@ -19,6 +19,8 @@ app.use('/', drinkRouter)
 
 app.use('/drinks', drinkRouter)
 
+app.use('/drinks/:id', drinkRouter)
+
 
 
 
