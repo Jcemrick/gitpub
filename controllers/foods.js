@@ -2,7 +2,8 @@
 // Dependencies 
 // ----------------------
 const express = require('express');
-const foods = require('../models/foods');
+const food = require('../models/foods');
+
 
 
 // ----------------------
@@ -10,22 +11,22 @@ const foods = require('../models/foods');
 // ----------------------
 
 
-const router = express.Router();
+const foodRouter = express.Router();
 
 
 // ----------------------
 // Routes
 // ----------------------
 
-router.get('/foods', (req, res) => {
+foodRouter.get('/', (req, res) => {
   res.render('foods_index.ejs', {
-    foods: foods,
+    foods: food
   })
 })
 
-router.get('/foods/:id', (req, res) => {
+foodRouter.get('/:id', (req, res) => {
   res.render('foods_show.ejs', {
-    foods: foods,
+    foods: food,
     id: req.params.id,
   })
 })
@@ -33,4 +34,4 @@ router.get('/foods/:id', (req, res) => {
 // ----------------------
 // export
 // ----------------------
-module.exports = router
+module.exports = foodRouter

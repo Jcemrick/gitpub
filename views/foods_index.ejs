@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title> 
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Food Menu</h1>
+  <ul>
+    <% foods.forEach((food) => { %>
+      <li><a href="/foods/<%= foods.indexOf(food) %>"> <%=  food.name.charAt(0).toUpperCase() + food.name.slice(1) %> </li>
+    <% }) %>
+  </ul>
+  <a href="/">Back</a>
+</body>
+</html>

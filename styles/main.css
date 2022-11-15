@@ -1,0 +1,17 @@
+body {
+  color: #284B63;
+  background-color: #E8E5DA;
+}
+img {
+  height: 13rem;
+  box-shadow: 0 0 2px 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #284B63;
+}
+
+a:hover {
+  color: red
+}

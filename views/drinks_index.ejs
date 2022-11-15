@@ -4,22 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style type="text/css">
-    body {
-      background-color: #E8E5DA;
-    }
-  </style>
+  <title>Drink Menu</title>
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>List of Drinks</h1>
+  <h1>Drinks Menu</h1>
     <ul>
       <% drinks.forEach((drink) => { %>
-        <% let drinkName = drink.name %>
-        <li><a href="/drinks/<%= drinks.indexOf(drink) %>"> <%=  drinkName.charAt(0).toUpperCase() + drinkName.slice(1) %> </li>
-
+        <li><a href="/drinks/<%= drinks.indexOf(drink) %>"> <%=  drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %> </li>
       <% }) %>
     </ul>
+    <a href="/">Back</a>
 </body>
 </html>
 
